@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cat.css">
+    <title>Category Container</title>
+</head>
+<body>
+    <div class="category-container">
+        <h2>Select Category</h2>
+        <div class="category-dropdown">
+            <label for="jewelry">Jewelry:</label>
+            <select id="jewelry">
+                <option value="" selected disabled>Select an option</option>
+                <option value="earrings">Earrings</option>
+                <option value="chains">Chains</option>
+                <option value="earrings">rings</option>
+                <option value="chains">necklaces</option>
+                <!-- Add more options as needed -->
+            </select>
+        </div>
+
+        <div class="category-dropdown">
+            <label for="toys">Toys:</label>
+            <select id="toys" onchange="redirectToPage()">
+        <option value="" selected disabled>Select an option</option>
+        <option value href="../codecraft-main/index.html">Action Figures</option>
+        <option value="board-games">Board Games</option>
+        <!-- Add more options as needed -->
+    </select>
+
+    <script>
+        function redirectToPage() {
+            var selectElement = document.getElementById("toys");
+            var selectedValue = selectElement.value;
+
+            if (selectedValue) {
+                // Redirect to the selected page
+                window.location.href = selectedValue;
+            }
+        }
+    </script>
+        </div>
+
+        <div class="category-dropdown">
+            <label for="electronics">Electronics:</label>
+            <select id="electronics">
+                <option value="" selected disabled>Select an option</option>
+                <option value="smartphones">Smartphones</option>
+                <option value="laptops">Laptops</option>
+                <!-- Add more options as needed -->
+            </select>
+        </div>
+
+        <div class="category-dropdown">
+            <label for="clothing">Clothing:</label>
+            <select id="clothing">
+                <option value="" selected disabled>Select an option</option>
+                <option value="shirts">Shirts</option>
+                <option value="dresses">Dresses</option>
+                <!-- Add more options as needed -->
+            </select>
+        </div>
+
+        <div class="category-dropdown">
+            <label for="home">Home:</label>
+            <select id="home">
+                <option value="" selected disabled>Select an option</option>
+                <option value="furniture">Furniture</option>
+                <option value="decor">Decor</option>
+                <!-- Add more options as needed -->
+            </select>
+        </div>
+
+        <div class="category-dropdown">
+            <label for="beauty">Beauty:</label>
+            <select id="beauty">
+                <option value="" selected disabled>Select an option</option>
+                <option value="skincare">Skincare</option>
+                <option value="makeup">Makeup</option>
+                <!-- Add more options as needed -->
+            </select>
+        </div>
+        <a href="../codecraft-main/index.html">
+            <button>Next</button>
+        </a>
+    
+    </div>
+</body>
+</html>

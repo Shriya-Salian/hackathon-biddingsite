@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bidd.css">
+    <title>Video Page</title>
+</head>
+<body>
+    <h1>LIVE AUCTION</h1>
+    <section>
+        <video width="640" height="360" controls>
+            <source src="../video_stream/video (720p).mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- Bidding section -->
+        <div class="bidding-section">
+            <h2>Bidding Section</h2>
+            <div class="bid-amount">
+                <label for="bidAmount">Bid Amount:</label>
+                <input type="number" id="bidAmount" placeholder="Enter bid amount">
+            </div>
+            <button class="raise-bid-btn">Raise Bid</button>
+            <button class="place-bid-btn">Place Bid</button>
+            <button class="withdraw-bid-btn">Withdraw Bid</button>
+        </div>
+        <div class="container">
+            <!-- chat box -->
+            <div class="chat-box">
+                <!-- client -->
+                <div class="client">
+                    <img src="logo.png" alt="logo" />
+                    <div class="client-info">
+                        <h2>mangalore bandhar</h2>
+                        <p>online</p>
+                    </div>
+                </div>
+
+                <!-- main chat section -->
+                <div class="chats">
+                    <div class="client-chat">Hi!</div>
+                    <div class="my-chat">Hi!</div>
+                    <div class="client-chat">How can i help you?</div>
+                    <div class="my-chat">Can I order in bulk and get deliver to bangalore?</div>
+                    <div class="client-chat">Yeah!! sure .</div>
+                </div>
+
+                <!-- input field section -->
+                <div class="chat-input">
+                    <input type="text" placeholder="Enter Message" />
+                    <button class="send-btn">
+                        <img src="send.png" alt="send-btn">
+                    </button>
+                </div>
+            </div>
+
+            <!-- button -->
+            <div class="chat-btn">
+                <img src="Circle-icons-chat.svg.png" alt="chat box icon btn">
+            </div>
+        </div>
+
+    </section>
+
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
